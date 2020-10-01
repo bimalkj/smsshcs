@@ -1,0 +1,10 @@
+<?php
+	session_start();
+	session_unregister("usrname");
+	session_unregister("rid");
+	session_unregister("sid");
+	session_unregister("logo");
+	session_unregister("max_shuffle");
+	header("location:index.php");
+	exit;
+?>
